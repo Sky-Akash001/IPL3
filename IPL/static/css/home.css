@@ -1,0 +1,63 @@
+
+body{
+  /* background-image: linear-gradient(to bottom right, red, yellow); */
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(182,231,24,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+
+
+.container{
+  text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight:bolder;
+  font-size: 1.4rem;
+
+}
+.logo{
+  font-weight: bolder;
+  color: #fff;
+  word-spacing: 1rem;
+  letter-spacing: 1rem;
+  border-bottom: 1px dotted #ff6699;
+}
+.label{
+  border:1px solid #eee;
+  background:white;
+  border-radius: 100px;
+  padding:0.3em;
+  margin:0.4em;
+  margin-left: 2rem;
+
+}
+.label2
+{
+
+  color:blue;
+  margin-top: 2rem;
+  padding:.5rem;
+}
+.Team1,
+.Team2{
+  text-transform: uppercase;
+  padding:0.5em;
+  font-family: 'MuseoModerno', cursive;
+
+}
+.Team1{
+  margin-bottom: 6.5rem;
+  margin-right: 2rem;
+}
+.btn{
+  display:inline-block;
+padding:0.5em 1.5em;
+font-weight: 500;
+text-transform: uppercase;
+margin:0.5em 0;
+
+}
+.primary{
+  background-color: #fff;
+border-radius: 100px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+      <form action=" {% url 'result' %}" >
+        {% csrf_token %}
+        <img src="./img/logo.jpg" alt="">
+        <h1 class="logo">INDIAN PREMIRE LEAGUE</h1>
+        <label class="label" for="Team1">Choose Team1</label>
+        <select class="Team1 " name="Team1">
+          <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+          <option value="Mumbai Indians">Mumbai Indians</option>
+          <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+          <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+          <option value="Chennai Super Kings">Chennai Super Kings</option>
+          <option value="Rajasthan Royals">Rajasthan Royals</option>
+          <option value="Delhi Capitals">Delhi Capitals</option>
+          <option value="Kings XI Punjab">Kings XI Punjab</option>
+
+        </select>
+
+          <!-- Team1:         <input type="text" required name="Team1" value=""><br> -->
+          <!-- Team2:         <input type="text" required name="Team2" value=""><br> -->
+          <label class="label" for="Team2">Choose Team2</label>
+          <select class="Team1 " name="Team2">
+            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+            <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+            <option value="Chennai Super Kings">Chennai Super Kings</option>
+            <option value="Rajasthan Royals">Rajasthan Royals</option>
+            <option value="Delhi Capitals">Delhi Capitals</option>
+            <option value="Kings XI Punjab">Kings XI Punjab</option>
+
+          </select>
+          <br><br>
+          <!-- team1_toss_win:<input type="text" required name="team1_toss_win" value=""><br> -->
+          <div class="BAT">
+          <label class="label label2" for="Team1">Toss Winner</label>
+          <select class="Team2 Toss Winner" name="Toss_Winner">
+            <option value="Team1">Team1</option>
+            <option value="Team2">Team2</option>
+
+          </select>
+
+          <!-- team1_bat:     <input type="text" required name="team1_bat" value=""><br> -->
+
+          <label class="label label2" for="Team batting First">Team batting First</label>
+          <select class="Team2 Team batting First" name="Team_batting_First">
+            <option value="Team1">Team1</option>
+            <option value="Team2">Team2</option>
+
+          </select>
+        </div>
+          <br><br>
+
+
+        <div class="Venue">
+          <label class="label label2" for="Venue">Select Venue</label>
+          <select class=" Team2 Venue" name="Venue">
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Indore">Indore</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Sarjah">Sarjah</option>
+            <option value="Abu Dhabi">Abu Dhabi</option>
+            <option value="Ranchi">Ranchi</option>
+            <option value="Raipur">Raipur</option>
+            <option value="Mohali">Mohali</option>
+          </select>
+        </div>
+          <br><br>
+          <button class="btn primary" type="submit" name="button">Submit</button>
+     
+      </form>
+  </div>
+
+  </body>
+</html>

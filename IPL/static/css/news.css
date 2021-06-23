@@ -1,0 +1,43 @@
+.container{
+background-image: url('https://images.unsplash.com/photo-1542029123374-26f7a8e05fdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+
+}
+h1
+{
+  border-bottom:1px solid yellow;
+text-align: center;
+font-family: 'Big Shoulders Stencil Display', cursive;
+letter-spacing: 1rem;
+word-spacing: 2rem;
+color:white;
+padding-top: 1rem;
+font-size: 2.5rem;
+}
+.news{
+  font-family: 'Akaya Telivigala', cursive;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-family: 'Montserrat', sans-serif;
+border:1px solid black;
+color:white;
+border-radius: 100px;
+margin:1.5rem;
+padding:0.8em;
+/* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+background: red;text-emphasis-style: circle;
+font-weight: bolder;
+
+
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: yellow; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+
+}

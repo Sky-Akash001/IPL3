@@ -1,0 +1,66 @@
+body{
+  background: url('https://images.unsplash.com/photo-1527195933919-15caa858f322?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80')
+}
+.container{
+  text-align: center;
+  margin:4rem;
+
+}
+h1{
+  font-family: 'Ranchers', cursive;
+  border-bottom: 2px solid blue;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+  word-spacing: 1rem;
+  background-color: #b8c6db;
+background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+h3
+{
+  font-family: 'Ranchers', cursive;
+  font-family: 'Syne Mono', monospace;
+
+  font-size: 1.8rem;
+  margin-top: 1em;
+  text-align: left;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(167,216,9,1) 100%);
+
+}
+.t{
+  margin-top: 1rem;
+  font-family: monospace;
+  font-size: 2rem;
+
+}
+.winner
+{
+  font-family: 'Ranchers', cursive;
+font-family: 'Ravi Prakash', cursive;
+font-family: 'Syne Mono', monospace;
+  text-align: center;
+  font-size: 3rem;
+  margin:1em;
+  margin-top: 0.4em;
+  font-weight: bold;
+  border:1px solid white;
+  border-radius: 100px;
+  background-color: #f3e6e8;
+background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
+
+/* .diagonal-gradient {
+  background: linear-gradient(to bottom right, blue, pink); */
+/*
+  background: -webkit-linear-gradient(#eee, #333);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent; */
+}
+.ipl{
+  border-radius: 8px;
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+}

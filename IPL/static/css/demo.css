@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+.{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+.header{
+  height:60vh;
+  background:url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2067&q=80');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;}
+/* ####################################Index Page styling########################################## */
+.heading{
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.8em;
+  text-decoration-style:dotted;
+
+}
+
+.container1{
+  max-width: 1200px;
+  width:90%;
+  margin:auto;
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  /* border:2px solid red; */
+  text-align: center;
+  margin-bottom: 0;
+}
+.container2{
+  width:50%;
+  background-color: #bcbcbc;
+  border:2px solid #bd34eb;
+  border-style: groove;
+  text-align: center;
+}
+p{
+  font-family: fantasy;
+  letter-spacing: 1px;
+  color:#fff;
+}
+h1{
+  color:white;
+  font-weight: 800;
+  /* text-decoration: underline; */
+  text-shadow: 20%;
+  text-decoration-color: blue;
+}
+
+.box-wrapper{
+       /* border:2px solid green; */
+       padding: 0;
+  }
+  .box{
+       /* border:2px solid blue; */
+      width:47.82%;
+      float:left;
+      padding:1rem;
+      text-align: center;
+      margin-left:0em;
+  }
+.link{
+  color:white;
+  text-decoration: none;
+}
+
+  .box{
+      background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,24,60,1) 35%, rgba(0,212,255,1) 100%);
+  color:#fff;
+  }
+
+.fab{
+  color:white;
+}
+
+
+  .box-wrapper::after{
+      content:"";
+      display:block;
+      clear:both;
+  }
+  /*##########################footer styling##################*/
+  .footer{
+      /* border:2px solid red; */
+      background-color: #263238;
+      color:#f4f4f4;
+      padding:1rem;
+      text-align: center;
+      margin: 0;
+  }
+  .social-media-links i{
+      /* border:2px solid green; */
+      margin:2rem;
+      text-decoration: none;
+  }
+  a:{
+    color:red;
+  }
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }

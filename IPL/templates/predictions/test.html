@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>First Innings Score Predictor</title>
+        <link rel="shortcut icon" href="{% static 'img/ipl-favicon.ico'}">
+        <link rel="stylesheet" href="{% static "css/test.css" %}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<!-- <div class="container">
+            <h2 class='container-heading'><span class='heading_first'>First Innings Score Predictor for </span><span class="heading_second">Indian Premier League (IPL)</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div> -->
+
+        <!-- Prediction Area -->
+        <div class="prediction-area">
+
+            <!-- IPL Banner - 1 -->
+            <div class='ipl-banner-left'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-up">
+
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                          <img src="{% static 'img/mi.jpg' %}" alt="MI">
+
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/srh.png'}" alt="SRH">
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/rcb.png'}" alt="RCB">
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/dc.png'}" alt="DC">
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/rr.png'}" alt="RR">
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/kkr.jpg'}" alt="KKR">
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/kxip.png'}" alt="KXIP">
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/csk.png'}" alt="Chennai Super Kings">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Prediction Form -->
+            <div class='div2'>
+              <form action=" {% url 'result' %}" >
+                {% csrf_token %}
+                <img src="./img/logo.jpg" alt="">
+                <h1 class="logo">INDIAN PREMIRE LEAGUE</h1>
+                <label class="" for="Team1">Choose Team1</label>
+                <select class="Team1 " name="Team1">
+                  <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                  <option value="Mumbai Indians">Mumbai Indians</option>
+                  <option value="Royal Challengers Bangalore">Royal Challengers Bengalurure</option>
+                  <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                  <option value="Chennai Super Kings">Chennai Super Kings</option>
+                  <option value="Rajasthan Royals">Rajasthan Royals</option>
+                  <option value="Delhi Capitals">Delhi Capitals</option>
+                  <option value="Kings XI Punjab">Kings XI Punjab</option>
+
+                </select>
+
+                  <!-- Team1:         <input type="text" required name="Team1" value=""><br> -->
+                  <!-- Team2:         <input type="text" required name="Team2" value=""><br> -->
+                  <label class="" for="Team2">Choose Team2</label>
+                  <select class="Team2 " name="Team2">
+                    <option value="Sunrisers Hyderabad">Sunrisers Hyderabad></option>
+                    <option value="Mumbai Indians">Mumbai Indians</option>
+                    <option value="Royal Challengers Bangalore">Royal Challengers Bengaluru</option>
+                    <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                    <option value="Chennai Super Kings">Chennai Super Kings</option>
+                    <option value="Rajasthan Royals">Rajasthan Royals</option>
+                    <option value="Delhi Capitals">Delhi Capitals</option>
+                    <option value="Kings XI Punjab">Kings XI Punjab</option>
+
+                  </select>
+                  <br><br>
+                  <!-- team1_toss_win:<input type="text" required name="team1_toss_win" value=""><br> -->
+                  <label for="Team1">Toss Winner</label>
+                  <select class="Toss Winner" name="Toss_Winner">
+                    <option value="Team1">Team1</option>
+                    <option value="Team2">Team2</option>
+
+                  </select>
+          <br><br>
+                  <!-- team1_bat:     <input type="text" required name="team1_bat" value=""><br> -->
+                  <label for="Team batting First">Team batting First</label>
+                  <select class="Team batting First" name="Team_batting_First">
+                    <option value="Team1">Team1</option>
+                    <option value="Team2">Team2</option>
+
+                  </select>
+                  <br><br>
+                  <!-- Venue:         <input type="text" required name="Venue" value=""><br> -->
+
+                  <label for="Venue">Select Venue</label>
+                  <select class=Venue" name="Venue">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Sarjah">Sarjah</option>
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Raipur">Raipur</option>
+                    <option value="Mohali">Mohali</option>
+
+
+
+                  </select>
+                  <br><br>
+
+                  <input type="submit" name="" value="Submit">
+              </form>
+            </div>
+
+            <!-- IPL Banner - 2 -->
+            <div class='ipl-banner-right'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-down">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/kkr.jpg'}" alt="KKR">
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/mi.jpg'}" alt="MI">
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/csk.png'}" alt="CSK">
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/dc.png'}" alt="DC">
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/kxip.png'}" alt="KXIP">
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/rcb.png'}" alt="RCB">
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/rr.png'}" alt="RR">
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img src="{% static 'img/srh.png'}" alt="SRH">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+       <!-- <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/anujvyas/IPL-First-Innings-Score-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by Anuj Vyas.</p>
+       </div> -->
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/result.css" %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Ranchers&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+<div class="container" >
+  <h1>Welcome to the results page</h1>
+  <h3>The Match is :{{lis2.Team1}} V/S {{lis2.Team2}}</h3>
+  <h3>The match is being played in {{lis2.Venue}}</h3>
+  <h3>{{lis2.Toss_Winner}} has won the toss and {{lis2.Team_batting_First}} is going to bat first</h3>
+  <p class="t">Winner of the match will be </p>
+  <p class="winner">{{winner}}</p>
+  <img class="ipl" src="{% static "img\logo2.jpg" %}" alt="'{{lis2.link}}'">
+
+  <!-- <img class="ipl" src="{% static "" %}" alt="{{lis2.link}}"> -->
+
+
+</div>
+  </body>
+</html>
